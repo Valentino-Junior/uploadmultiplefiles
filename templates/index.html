@@ -1,0 +1,23 @@
+  <!-- templates/home.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="upload1">
+    <form enctype="multipart/form-data" action='' method="POST" >
+      {% csrf_token %}
+     <hr> <br><br>
+      <input type="file" multiple name="files" id="name" required/>
+        <br><br> 
+        <div class="btnblock">
+        <button type="submit" href="/">Submit</button>
+        </div>
+    </form>
+    <div class="formssite">
+          {% for url in new_urls %}
+          <p>{{url}}</p>
+         {% endfor %}
+    </div>
+  </div>
+ 
+
+{% endblock content %}

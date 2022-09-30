@@ -1,0 +1,21 @@
+/* static/css/base.css */
+body {
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 18px;
+background-color: whitesmoke;
+text-align: center;
+}
+.upload1{
+    align-items: center;
+    background-color: green;
+    padding: 20px;
+}
+.btnblock{
+    text-align: center;
+    align-items: center;
+}
+.formssite{
+    align-items: center;
+    color: grey;
+    background-color: goldenrod
+}
