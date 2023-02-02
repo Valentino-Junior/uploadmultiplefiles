@@ -12,10 +12,10 @@ def index(request):
         for file in files:
             new_file=Files(file=file)
             new_file.save()
-            file_list.append(new_file.file.url)
+            # file_list.append(new_file.file.url)
             
         # return render(request, 'index.html', {'new_urls': str(new_file.file.url)})
-        return render(request, 'index.html', {'new_urls': file_list})
+        return render(request, 'index.html')
     else:
         return render (request, 'index.html')
 
